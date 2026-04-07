@@ -1,0 +1,182 @@
+
+/* list navbar biar horizontal */
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 6px;
+}
+
+/* =========================
+   CONTAINER UTAMA
+   ========================= */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  /* dikasih blur dikit biar nyatu sama background */
+  backdrop-filter: blur(4px);
+}
+
+/* =========================
+   CARD (INI YANG PALING KELIATAN)
+   ========================= */
+.card {
+  width: 600px; 
+  padding: 25px;
+
+  background-color: rgba(255, 255, 255, 0.9); /* putih semi transparan */
+  border-radius: 16px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   TEXT
+   ========================= */
+h2, h3 {
+  text-align: left; /* di gambar lebih ke kiri */
+}
+
+/* judul utama kasih warna hijau biar hidup */
+h2 {
+  color: #2e9d57;
+}
+
+/* highlight penting */
+.highlight {
+  color: #2e9d57;
+  font-weight: bold;
+}
+
+/* =========================
+   FORM INPUT
+   ========================= */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+
+  border-radius: 8px;
+  border: 1px solid #ddd; /* lebih soft */
+  background-color: #fafafa;
+}
+
+/* =========================
+   GENDER OPTION
+   ========================= */
+.gender {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+/* biar rata dan enak dilihat */
+.gender label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+  padding: 8px;
+
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+button {
+  width: 100%;
+  padding: 12px;
+
+  background-color: #2e9d57; /* hijau kayak di gambar */
+  color: white;
+
+  border: none;
+  border-radius: 30px;
+
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+/* efek hover biar ada feel */
+button:hover {
+  background-color: #257a45;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px; /* jarak antar tombol */
+  margin-top: 10px;
+}
+
+.btn-group button {
+  flex: 1; /* biar sama besar */
+}
+
+/* opsional beda warna biar jelas */
+.btn-update {
+  background-color: #2e9d57;
+}
+
+.btn-hapus {
+  background-color: #d9534f;
+}
+
+/* tombol tambahan */
+.BtnBack {
+  margin-top: 10px;
+  padding: 12px;
+
+  background-color: #444;
+  color: #fff;
+
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+}
+
+/* =========================
+   HASIL OUTPUT
+   ========================= */
+.hasil {
+  min-height: 200px;
+}
+
+/* =========================
+   BODY (BACKGROUND + CENTER)
+   ========================= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+
+  /* biar semua ke tengah */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-image: url("lt2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* overlay gelap tipis biar teks kebaca */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+
+  z-index: -1;
+}

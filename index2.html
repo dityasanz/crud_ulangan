@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Kalori</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Masukkan data anda</h2>
+
+        <input type="number" id="tinggi" placeholder="Tinggi Badan (cm)">
+        <input type="number" id="berat" placeholder="Berat Badan (kg)">
+        <input type="number" id="usia" placeholder="Umur">
+
+        <select id="aktivitas">
+            <option value="1.2">Sangat jarang olahraga</option>
+            <option value="1.375">Aktivitas ringan (1-3 hari/minggu)</option>
+            <option value="1.55">Aktivitas sedang (3-5 hari/minggu)</option>
+            <option value="1.725">Aktivitas berat (6-7 hari/minggu)</option>
+            <option value="1.9">Olahraga setiap hari</option>
+        </select>
+
+        <div class="gender">
+            <label><input type="radio" name="gender" value="Laki-laki"> Laki-laki</label>
+            <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+        </div>
+
+        <button onclick="HitungKalori()">Hitung</button>
+
+        <a href="index.html">
+            <button class="BtnBack">Kembali ke halaman utama</button>
+        </a>
+    </div>
+
+    <div class="card hasil" id="hasil">
+        <h3>Hasil akan muncul di sini</h3>
+    </div>
+
+</div>
+
+<script src="/script/script.js"></script>
+</body>
+</html>
